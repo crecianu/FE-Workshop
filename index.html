@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <div id="app">
+      <section id="filters">
+        <label for="filter_users">Filter by first name or last name</label>
+        <input type="text" id="filter_users" />
+        <label for="sorting">Sort by First name: </label>
+        <select name="sort" id="sorting">
+          <option value="">None</option>
+          <option value="asc">A - Z</option>
+          <option value="desc">Z - A</option>
+        </select>
+        <div>
+          <label for="filter_users">Search by first name</label>
+          <input type="text" id="search_by" />
+          <button id="search_button" type="button">search</button>
+        </div>
+        
+      </section>
+      <div class="container">
+        <section id="users" class="users">
+        
+        </section>
+      </div>
+      <div class="buttons">
+        <button id="prev_button">Previous</button>
+        <button id="next_button">Next</button>
+      </div>
+    </div>
+    <script src="./src/fetch-users.js"></script>
+  </body>
+</html>
